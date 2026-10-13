@@ -1,0 +1,135 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar (menu) */
+.menu {
+    background-color: #003366;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #0055a4;
+}
+
+/* Header halaman */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #0055a4;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Main konten - tempat bersejarah */
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section tempat bersejarah */
+.bersejarah-section h2 {
+    font-size: 1.7rem;
+    color: #003366;
+    margin: 2rem 0 1.2rem;
+    text-align: center;
+}
+
+/* Grid card tempat bersejarah */
+.bersejarah-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.bersejarah-cards .card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bersejarah-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bersejarah-cards .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.bersejarah-cards .card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.1rem;
+    color: #003366;
+}
+
+.bersejarah-cards .card p {
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 1rem 1rem;
+}
+
+/* Responsive untuk layar kecil (HP) */
+@media (max-width: 576px) {
+    .menu {
+        flex-direction: column;
+        padding: 0.8rem 1rem;
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .bersejarah-cards {
+        gap: 1.5rem;
+    }
+
+    .bersejarah-cards .card {
+        max-width: 100%;
+    }
+}

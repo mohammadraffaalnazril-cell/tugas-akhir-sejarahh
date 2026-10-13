@@ -1,0 +1,134 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Menu navigasi */
+.menu {
+    background-color: #003366;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #0055a4;
+}
+
+/* Container utama tokoh */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Gambar tokoh */
+.container img {
+    width: 100%;
+    max-width: 240px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0055a4;
+    margin-bottom: 1.2rem;
+}
+
+/* Judul utama */
+.container h1 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 0.3rem;
+}
+
+.container h3 {
+    font-size: 1.1rem;
+    color: #0055a4;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* Teks paragraf */
+.container p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+/* Subjudul jasa perjuangan */
+.container h2 {
+    font-size: 1.4rem;
+    color: #003366;
+    margin: 1.8rem 0 1rem;
+    text-align: left;
+}
+
+/* Daftar jasa perjuangan */
+.container ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto 1.5rem;
+    max-width: 600px;
+    text-align: left;
+}
+
+.container li {
+    background: linear-gradient(90deg, #e6f2ff, #ffffff);
+    padding: 0.7rem 1rem;
+    margin-bottom: 0.6rem;
+    border-radius: 6px;
+    border-left: 4px solid #0055a4;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Responsive untuk layar kecil (HP) */
+@media (max-width: 576px) {
+    .menu {
+        flex-direction: column;
+        padding: 0.8rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .container {
+        margin: 1rem auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .container img {
+        max-width: 180px;
+        height: 200px;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+}
